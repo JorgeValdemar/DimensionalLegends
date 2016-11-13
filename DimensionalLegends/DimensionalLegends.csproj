@@ -209,6 +209,9 @@
     <Compile Include="Aplicacao\Opcoes\Atualizar.ashx.cs">
       <DependentUpon>Atualizar.ashx</DependentUpon>
     </Compile>
+    <Compile Include="Aplicacao\Outros\HandlerContato.ashx.cs">
+      <DependentUpon>HandlerContato.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Aplicacao\Utils\Elementos.ashx.cs">
       <DependentUpon>Elementos.ashx</DependentUpon>
     </Compile>
@@ -581,6 +584,7 @@
     <Content Include="Content\plugins\bootstrap.css.map" />
     <Content Include="Aplicacao\WS\Versus.ashx" />
     <Content Include="Aplicacao\WS\Chat.ashx" />
+    <Content Include="Aplicacao\Outros\HandlerContato.ashx" />
     <None Include="Imagens\cards\assistentes\Thumbs.db" />
     <None Include="Imagens\cards\cartas\Thumbs.db" />
     <None Include="Imagens\cards\Thumbs.db" />
