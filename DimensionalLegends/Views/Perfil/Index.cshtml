@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Index";
+    ViewBag.Controller = "Perfil";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Player = (Classes.Objetos.PlayerStatus)ViewBag.Player;
+}
+
+<div class="divisorContent row">
+
+    <div class="col-md-12">
+        @{
+            if (!string.IsNullOrEmpty(ViewBag.Erro))
+            {
+                Response.Write(ViewBag.Erro);
+            }
+        }
+
+        <h3>Detalhes de: @ViewBag.Player.Nick</h3>
+        
+        <div id="perfilVisual">
+            <img src="/Imagens/cards/cartas/@string.Concat(ViewBag.Player.Imagem, ".jpg")" class="img-responsive" />
+            <br />
+            <button type="button" class="btn btn-default btn-xs voltar" data-toggle="dica" data-descr="Voltar para a tela inicial">
+                Voltar
+            </button>
+        </div>
+
+        <ul id="perfilDescr">
+            <li>
+                <strong>Level:</strong> @ViewBag.Player.Level
+            </li>
+            <li>
+                <strong>MP:</strong> @ViewBag.Player.MaxMp
+            </li>
+            <li>
+                <strong>SP:</strong> @ViewBag.Player.MaxSp
+            </li>
+            <li>
+                <strong>COINS:</strong> @ViewBag.Player.Coins
+            </li>
+            <li>
+                <strong>Multiplayer:</strong>
+                <br />
+                0 Vitórias / 0 Empates / 0 Perdas 
+            </li>
+            <li>
+                <strong>Arcade:</strong>
+                <br />
+                0 Vitórias / 0 Empates / 0 Perdas
+            </li>
+            <li>
+                <strong>Medalhas:</strong>
+                <br />
+                Nenhuma..
+            </li>
+        </ul>
+
+    </div>
+
+
+</div>
+
+@section scripts {
+
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Game/perfil.js")"></script>
+
+}

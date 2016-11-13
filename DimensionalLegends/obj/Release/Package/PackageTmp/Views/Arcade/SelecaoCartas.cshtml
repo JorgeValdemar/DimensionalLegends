@@ -1,0 +1,132 @@
+﻿@{
+    ViewBag.Title = "Selecao de Cartas";
+    ViewBag.Controller = "SelecaoCartas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("Arena", "Arcade", FormMethod.Post, new { id = "formSlcCartas"}))
+{
+    @Html.Hidden("faseId", (int)ViewBag.faseId)
+    @Html.Hidden("faseListaCartas", "", new { id = "faseListaCartas" })
+}
+
+<div class="divisorContent row">
+    <div class="col-md-12" style="margin-bottom: 10px">
+        <h5>Clique no "+" das cartas a direita para adicinar a carta no seu deck</h5>
+    </div>
+
+    <div id="colunaDeck" class="col-md-6">
+        <h5>Cartas no deck: {{ listaDeck.length }} / 10</h5>
+
+        <div class="row filtro">
+            <div class="col-md-12">
+
+                <button type="button" class="btn btn-default btn-xs voltar" style="float: right;" data-toggle="dica" data-descr="Voltar e ignorar as modificações">
+                    Voltar
+                </button>
+
+            </div>
+        </div>
+
+        <div id="deck" class="enscrollbox">
+            <ul>
+                <li ng-repeat="ld in listaDeck" data-elementoid="%{{ ld.Elemento.ElementoId }}%" data-rank="%{{ ld.Rank }}%">
+                    <div class="listItemCarta listaOpcao rank-{{ ld.Rank }}" id="deck-{{ ld.Numero }}" data-uso="{{ ld.EmUso }}" style="background-image: url(/Imagens/cards/cartas/{{ ld.Numero }}.jpg);">
+                        <div class="itemEtc" data-toggle="carta" data-info="deck"></div>
+                        <div class="itemInfo">
+                            {{ ld.Numero }} - {{ ld.Nome }}
+
+                            <br />
+
+                            <div ng-if="ld.Elemento.ElementoId == 4" class="elemento-ico" data-toggle="dica" data-descr="{{ ld.Elemento.Elemento }}"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span></div>
+                            <div ng-if="ld.Elemento.ElementoId == 1" class="elemento-ico" data-toggle="dica" data-descr="{{ ld.Elemento.Elemento }}"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span></div>
+                            <div ng-if="ld.Elemento.ElementoId == 6" class="elemento-ico" data-toggle="dica" data-descr="{{ ld.Elemento.Elemento }}"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></div>
+                            <div ng-if="ld.Elemento.ElementoId == 7" class="elemento-ico" data-toggle="dica" data-descr="{{ ld.Elemento.Elemento }}"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span></div>
+                            <div ng-if="ld.Elemento.ElementoId == 5" class="elemento-ico" data-toggle="dica" data-descr="{{ ld.Elemento.Elemento }}"><span class="glyphicon glyphicon-certificate" aria-hidden="true"></span></div>
+                            <div ng-if="ld.Elemento.ElementoId == 8" class="elemento-ico" data-toggle="dica" data-descr="{{ ld.Elemento.Elemento }}"><span class="glyphicon glyphicon-cloud" aria-hidden="true"></span></div>
+                            <div ng-if="ld.Elemento.ElementoId == 3" class="elemento-ico" data-toggle="dica" data-descr="{{ ld.Elemento.Elemento }}"><span class="glyphicon glyphicon-tower" aria-hidden="true"></span></div>
+                            <div ng-if="ld.Elemento.ElementoId == 2" class="elemento-ico" data-toggle="dica" data-descr="{{ ld.Elemento.Elemento }}"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></div>
+
+                            <button ng-if="ld.EmUso == true" type="button" class="btn btn-default btn-xs" style="float: right; cursor: default;" data-toggle="dica" data-descr="Carta já adicionada">
+                                <span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span>
+                            </button>
+
+                            <button ng-if="ld.EmUso == false" type="button" class="btn btn-default btn-xs deletar-card-deck" style="float: right;" data-toggle="dica" data-descr="Adicionar">
+                                <span class="glyphicon glyphicon-arrow-right aria-hidden=" true"></span>
+                            </button>
+
+                            <button type="button" class="btn btn-default btn-xs" data-toggle="carta" data-info="deck" style="float: right;">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+
+                            <!--<div class="glyphicon glyphicon-plus"></div>-->
+                        </div>
+                    </div>
+                </li>
+                <li class="nenhum-resultado">
+                    <div class="listItemCarta listaOpcao">
+                        <div class="itemEtc"></div>
+                        <div class="itemInfo">Nenhum resultado encontrado</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div id="colunaCartas" class="col-md-6">
+        <h5>Cartas selecionadas: {{ listaCartas.length }} / 5</h5>
+
+        <div class="row filtro">
+            <div class="col-md-12">
+
+                <button ng-if="listaCartas.length == 5" type="button" id="salvarDeck" class="btn btn-primary btn-xs" style="float: right; margin-left: 13px;" data-toggle="dica" data-descr="Iniciar partida!">
+                    Iniciar partida!
+                </button>
+
+            </div>
+        </div>
+
+        <div id="listaCartas" class="enscrollbox">
+            <ul>
+                <li ng-repeat="lc in listaCartas" data-elementoid="%{{ lc.Elemento.ElementoId }}%" data-rank="%{{ lc.Rank }}%">
+                    <div class="listItemCarta listaOpcao rank-{{ lc.Rank }}" id="deck-{{ lc.Numero }}" data-uso="{{ lc.EmUso }}" style="background-image: url(/Imagens/cards/cartas/{{ lc.Numero }}.jpg);">
+                        <div class="itemEtc" data-toggle="carta" data-info="listaCartas"></div>
+                        <div class="itemInfo">
+                            {{ lc.Numero }} - {{ lc.Nome }}
+
+                            <br />
+
+                            <div ng-if="lc.Elemento.ElementoId == 4" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span></div>
+                            <div ng-if="lc.Elemento.ElementoId == 1" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span></div>
+                            <div ng-if="lc.Elemento.ElementoId == 6" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></div>
+                            <div ng-if="lc.Elemento.ElementoId == 7" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span></div>
+                            <div ng-if="lc.Elemento.ElementoId == 5" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-certificate" aria-hidden="true"></span></div>
+                            <div ng-if="lc.Elemento.ElementoId == 8" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-cloud" aria-hidden="true"></span></div>
+                            <div ng-if="lc.Elemento.ElementoId == 3" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-tower" aria-hidden="true"></span></div>
+                            <div ng-if="lc.Elemento.ElementoId == 2" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></div>
+
+                            <button type="button" class="btn btn-default btn-xs adicionar-card" style="float: right;" data-toggle="dica" data-descr="Remover">
+                                <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+                            </button>
+
+                            <button type="button" class="btn btn-default btn-xs" data-toggle="carta" data-info="listaCartas" style="float: right;">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+
+@section scripts {
+
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Game/selecaoCartas.js")"></script>
+
+}
+

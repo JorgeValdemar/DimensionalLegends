@@ -1,0 +1,122 @@
+﻿@{
+    ViewBag.Title = "Cadastro";
+    ViewBag.Controller = "Cadastro";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section styles {
+
+    <link href="@Url.Content("~/Content/cadastro-char.css")" rel="stylesheet"/>
+
+}
+
+<div class="divisorContent row">
+    <div class="col-md-12" style="margin-bottom: 10px">
+        <h4>Criação do personagem: {{ Avatar }}</h4>
+    </div>
+    
+    <div id="colunaDeck" class="col-md-6">
+        <h5>Preencha os dados e escolha um deck, depois clique em "Cadastrar"</h5>
+        <h6>*O Avatar e o Deck não pederão ser alterado após o cadastramento.</h6>
+        <h6>*A imagem poderá ser alterada em uma versão futura do jogo.</h6>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="nomeChar">Avatar:</label>
+                    <input type="text" class="form-control" id="nomeChar" ng-model="Avatar" placeholder="Digite um nome para seu avatar">
+                </div>
+                
+                <label>Selecione um deck:</label>
+
+                <br style="clear: both;" />
+
+                <div class="deck-option" style="background-color: rgb(122, 228, 122);">
+                    <label class="radio-inline">@Html.RadioButton("deck", 1, true, new { data_id = "1" }) Shounen </label>
+                </div>
+                
+                <div class="deck-option" style="background-color: rgb(228, 141, 217);">
+                    <label class="radio-inline">@Html.RadioButton("deck", 2, false, new { data_id = "2" }) Shoujo </label>
+                </div>
+                
+                <div class="deck-option" style="background-color: #617FF7;">
+                    <label class="radio-inline">@Html.RadioButton("deck", 3, false, new { data_id = "3" }) Gamer </label>
+                </div>
+                
+                <div class="deck-option" style="background-color: rgb(249, 88, 88);">
+                    <label class="radio-inline">@Html.RadioButton("deck", 4, false, new { data_id = "4" }) Expert </label>
+                </div>
+                
+                <br style="clear: both;" />
+
+                <label>Selecione uma imagem:</label>
+                
+                <div class="row">
+                    <div class="col-md-3">
+                        <div id="cadastroImagem" style="background-image: url(/Imagens/cards/cartas/{{ NumeroImagem }}.jpg);"></div>
+                    </div>
+                    <div class="col-md-9">
+                        <div id="colunaCadImgs">
+                            <ul id="cadastroImagensLista" style="width: {{ (listaCartas.length * 84) + 'px' }}">
+                                <li ng-repeat="ld in listaCartas" data-numero="{{ ld.Numero }}" style="background-image: url(/Imagens/cards/cartas/{{ ld.Numero }}.jpg);"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+          </div>
+        </div>
+        
+        <button type="button" id="salvarCadastro" class="btn btn-primary btn-xs" style="float: right;margin-left: 30px;" data-toggle="dica" data-descr="Cadastrar-se para jogar DL">
+            Cadastrar
+        </button>    
+
+        <button type="button" class="btn btn-default btn-xs voltar" style="float: right;" data-toggle="dica" data-descr="Voltar e ignorar o cadastro">
+            Voltar
+        </button>    
+
+    </div>
+
+    <div id="colunaCartas" class="col-md-6">
+        <h5>Cartas no deck selecionado: </h5>
+        
+        <div id="listaCartas" class="enscrollbox">
+            <ul>
+                <li ng-repeat="lc in listaCartas" data-ElementoId="%{{ lc.Elemento.ElementoId }}%" data-rank="%{{ lc.Rank }}%">
+                    <div class="listItemCarta listaOpcao rank-{{ lc.Rank }}" id="deck-{{ lc.Numero }}" data-uso="{{ lc.EmUso }}" style="background-image: url(/Imagens/cards/cartas/{{ lc.Numero }}.jpg);">
+                        <div class="itemEtc" data-toggle="carta" data-info="listaCartas"></div>
+                        <div class="itemInfo">
+                            {{ lc.Numero }} - {{ lc.Nome }}    
+                            
+                            <br />
+                        
+                            <div ng-if="lc.Elemento.ElementoId == 4" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span></div> 
+                            <div ng-if="lc.Elemento.ElementoId == 1" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span></div> 
+                            <div ng-if="lc.Elemento.ElementoId == 6" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></div> 
+                            <div ng-if="lc.Elemento.ElementoId == 7" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span></div> 
+                            <div ng-if="lc.Elemento.ElementoId == 5" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-certificate" aria-hidden="true"></span></div> 
+                            <div ng-if="lc.Elemento.ElementoId == 8" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-cloud" aria-hidden="true"></span></div> 
+                            <div ng-if="lc.Elemento.ElementoId == 3" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-tower" aria-hidden="true"></span></div> 
+                            <div ng-if="lc.Elemento.ElementoId == 2" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></div>
+            
+                            <button type="button" class="btn btn-default btn-xs" data-toggle="carta" data-info="listaCartas" style="float: right;">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                            
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+@section scripts {
+
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Game/cadastro.js")"></script>
+
+}
+
+
+

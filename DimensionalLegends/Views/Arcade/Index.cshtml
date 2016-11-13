@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "Index";
+    ViewBag.Controller = "ArcadeFases2d";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="divisorContent row">
+    <div class="col-md-12" style="margin-bottom: 10px">
+        <h5>Selecione uma fase para jogar:</h5>
+    </div>
+
+    <div id="colunaDeck" class="col-md-6">
+
+        <div class="row filtro">
+            <div class="col-md-12">
+                <button type="button" class="btn btn-default btn-xs voltar" style="float: right;" data-toggle="dica" data-descr="Voltar para a tela inicial">
+                    Voltar
+                </button>
+
+                <button type="button" class="btn btn-default btn-xs disabled" style="float: right;" data-toggle="dica" data-descr="Exibir informações">
+                    <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+
+        <div id="deck" class="enscrollbox">
+            <ul>
+                <li ng-repeat="lf in listaFases">
+                    <div class="listItemCarta listaOpcao rank-1" id="deck-{{ lf.Id }}" style="background-image: url({{ '/Imagens/cards/cartas/' + lf.ArcadeLiderStatus.Imagem }});">
+                        <div class="itemEtc fase-info" data-toggle="dica" data-descr="Clique para exibir informações"></div>
+                        <div class="itemInfo">
+                            {{ lf.Id }} - {{ lf.FaseNome }}
+                            <br />
+                            Lider: {{ lf.ArcadeLiderStatus.Nick }}
+
+                            <button type="button" class="btn btn-default btn-xs fase-info" data-toggle="dica" data-descr="Clique para exibir informações" style="float: right;">
+                                <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="nenhum-resultado">
+                    <div class="listItemCarta listaOpcao">
+                        <div class="itemEtc"></div>
+                        <div class="itemInfo">Nenhum resultado encontrado</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+
+        
+@section scripts {
+
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Game/arcadeFases2d.js")"></script>
+
+}
+
+

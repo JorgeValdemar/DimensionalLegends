@@ -1,0 +1,120 @@
+﻿@{
+    ViewBag.Title = "Arena";
+    ViewBag.Controller = "Arena";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.Hidden("faseId", (int)ViewBag.faseId, new { id = "faseId" })
+@Html.Hidden("faseListaCartas", (string)ViewBag.faseListaCartas, new { id = "faseListaCartas" })
+
+
+
+
+<div class="divisorContent row">
+    <div class="col-md-12" style="margin-bottom: 10px">
+        <h5>Efeito de Arena: Nenhum.</h5>
+    </div>
+
+    <div id="colunaDeck" class="col-md-12 arena" style="width: 100%;padding: 0px!important;">
+
+        <div class="row filtro opcoes-arena">
+            <div class="col-md-12">
+
+                <button type="button" class="btn btn-default btn-xs" id="desistirBtn" style="float: right;" data-toggle="dica" data-descr="Desistir contará como perda">
+                    Desistir
+                </button>
+
+            </div>
+        </div>
+
+        <div id="tabuleiro" class="arena-palco" style="border-radius: initial !important;">
+
+            <ul class="tab-coluna">
+                <li class="tab-linha"></li>
+                <li class="tab-linha"></li>
+                <li class="tab-linha"></li>
+            </ul>
+
+            <ul class="tab-coluna">
+                <li class="tab-linha"></li>
+                <li class="tab-linha"></li>
+                <li class="tab-linha"></li>
+            </ul>
+
+            <ul class="tab-coluna">
+                <li class="tab-linha"></li>
+                <li class="tab-linha"></li>
+                <li class="tab-linha"></li>
+            </ul>
+
+            <ul class="tab-coluna">
+                <li class="tab-linha"></li>
+                <li class="tab-linha"></li>
+                <li class="tab-linha"></li>
+            </ul>
+
+
+            <div id="placar">
+                <ul id="placarP1" class="placar-pontos">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li>
+                        <div class="player-num">Seus pontos</div>
+                    </li>
+                </ul>
+                <ul id="placarP2" class="placar-pontos">
+                    <li>
+                        <div class="player-num">Oponente</div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div id="deckHand">
+            <div class="relative-cover">
+                <div id="rightOptions">
+                    <button type="button" class="btn btn-default btn-xs" id="minimizar" data-toggle="dica" data-descr="Minimizar / Maximizar">
+                        <span class="glyphicon glyphicon-resize-small" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-resize-full" style="display: none" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>    
+</div>
+
+
+
+
+@section scripts {
+
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Game/arena.js")"></script>
+
+}

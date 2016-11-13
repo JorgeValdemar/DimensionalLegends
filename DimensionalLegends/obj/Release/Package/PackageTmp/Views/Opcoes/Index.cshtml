@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Opções";
+    ViewBag.Controller = "Opcoes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="divisorContent row">
+    <div class="col-md-12">
+        <h3>Opções</h3>
+
+        @using (Html.BeginForm("Search", "Events"))
+        {
+            <ul id="menuOpcoes">
+                <li>
+                    @Html.ActionLink("Mudar assistente", "Assistentes", "Opcoes", null, new { data_toggle = "dica", data_descr = "Mudar o Assistente?" })
+                </li>
+
+                <li>
+                    <div class="listaOpcao" data-toggle="dica" data-descr="Muda o idioma do jogo (Indisponível)">
+                        <label>Idioma:</label>
+                        <div>
+                            <label class="radio-inline">@Html.RadioButton("idioma", 0, true, new { }) Português </label>
+                            <label class="radio-inline">@Html.RadioButton("idioma", 1, false, new { }) English </label>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="listaOpcao" data-toggle="dica" data-descr="Ativa ou desativa os sons (Indisponível)">
+                        <label>Som:</label>
+                        <div>
+                            <label class="radio-inline">@Html.RadioButton("som", 0, false, new { }) Ligado </label>
+                            <label class="radio-inline">@Html.RadioButton("som", 1, true, new { }) Desligado </label>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    @Html.ActionLink("Salvar", "Index", "MenuPrincipal", null, new { data_toggle = "dica", data_descr = "Salvar mudanças e voltar para a tela inicial." })
+                    
+                    <!-- SE MENTEM COMENTADO ATÉ SER NECESSÁRIO O AJAX
+                        <a href="javascript:void(0);" data-toggle="dica" data-descr="Salvar mudanças e voltar para a tela inicial.">
+                        Salvar
+                    </a> -->
+                </li>
+            </ul>
+        }
+
+    </div>
+</div>
+
+@section scripts {
+    
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Game/opcoes.js")"></script>
+
+}

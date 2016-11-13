@@ -1,0 +1,69 @@
+[
+	{
+		"Menu" : {
+			"0" : {
+				"Mundo (indisponível)" : "Jogue contra o mundo todo e se torne um dos melhores jogadores!"
+			},
+			"1" : {
+				"Arcade" : "Jogue contra a máquina e desenvolva um deck mais forte enquanto descobre novos mundos e desafios!"
+			},
+			"2" : {
+				"Shopping" : "Compre, venda ou veja as cartas que estamos fornecendo!"
+			},
+			"3" : {
+				"Minhas Cartas" : "Gerencie o seu deck junto com todas as suas cartas disponíveis!"
+			},
+			"4" : {
+				"Meu Perfil" : "Veja detalhadamente o seu perfil de usuário!"
+			},
+			"5" : {
+				"Ranking (indisponível)" : "Descubra sobre os melhores jogadores!"
+			},
+			"6" : {
+				"Como Jogar?" : "Veja um tutorial."
+			},
+			"7" : {
+				"Sala de música" : "Gerencie ou escute uma música do jogo!"
+			},
+			"8" : {
+				"Brasões de Conquistas" : "suas conquistas são mostradas aqui."
+			},
+			"9" : {
+				"Opções" : "Gerencie e personalize o jogo!"
+			},
+			"10" : {
+				"Sair" : "Encerrar o jogo"		
+			}
+		},
+		"Opcoes" : {
+			"0" : {
+				"Idioma ~indisponível~" : {
+					"0" : { 
+						"Português" : 0
+					},
+					"1" : {
+						"English" : 1 
+					}
+				}
+			},
+			"1" : {
+				"Som" : {
+					"0" : {
+						"Ligado" : 1 
+					},
+					"1" : {
+						"Desligado": 0
+					}
+				}
+			},
+			"2" : {
+				"Chibi Assistente" : "Mudar o Chibi Assistente?"
+			},
+			"3" : {
+				"Salvar alterações e sair" : "Salvar mudanças e voltar para a tela inicial."
+			}
+			
+		}		
+		
+	}
+]

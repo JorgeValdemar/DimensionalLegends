@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Index3D";
+    ViewBag.Controller = "ArcadeFases";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="3dtela row">
+    <div class="col-md-12" style="margin-bottom: 10px">
+
+        <canvas id="renderCanvasArcadeFases" class="usa-dicas"></canvas>
+
+    </div>
+</div>
+
+@section scripts {
+
+    <!-- Babylon.js -->
+    @Scripts.Render("~/bundles/babylon")
+
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Utils/BDLF.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Game/arcadeFases.js")"></script>
+
+}
+

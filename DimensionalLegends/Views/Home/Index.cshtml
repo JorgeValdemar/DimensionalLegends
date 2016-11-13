@@ -1,0 +1,292 @@
+﻿@{
+    ViewBag.Title = "Dimensional Legends";
+}
+
+<a name="home"></a>
+<div id="mainContent" class="container">
+
+    <div id="header">
+        <div class="h1">
+            Dimensional Legends
+        </div>
+        <img src="~/Imagens/topo.png" class="img-responsive" />
+
+        <div id="headerMenu">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#o-que-e">O que é?</a>
+                </li>
+                <li>
+                    <a href="#jogar">Jogar</a>
+                </li>
+                <li>
+                    <a href="#como-jogar">Como Jogar?</a>
+                </li>
+                <li>
+                    <a href="#cartas">Cartas</a>
+                </li>
+                <li>
+                    <a href="#notas">Notas do Criador</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="content">
+
+
+        <!-- O QUE É? -->
+        <a name="o-que-e"></a>
+        <div class="separador-tela">
+
+            <div class="sub-titulo h2">
+                O que é?
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        Já imaginou jogar um game de tabuleiro onde você usa cartas dos seus personagens favoritos?
+                        <br />
+                        Isso mesmo!
+                        <br /><br />
+                        Eu como administrador e principal game master deste card game trago a vocês um jogo sem fins lucrativos,
+                        onde o objetivo é apenas reunir a diversão, seja bem vindo ao mundo de <b>Dimensinal Legends</b>.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- JOGAR -->
+        <a name="jogar"></a>
+        <div class="separador-tela">
+
+            <div class="sub-titulo h2">
+                Jogar
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>
+                        Já tenho cadastro:
+                    </p>
+                    <button type="button" id="btnEntrar" class="btn btn-success">Entrar</button>
+                </div>
+
+                <div class="col-lg-6">
+                    <p>
+                        Preencha os campos abaixo:
+                    </p>
+                    <form id="cadastroForm">
+
+                        <div class="form-group">
+                            <input name="nome" id="nome" placeholder="Digite o seu nome" class="form-control" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input name="email" id="email" placeholder="Digite o seu e-mail" class="form-control" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="senha" id="senha" placeholder="Digite uma nova senha" class="form-control" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="senha2" id="senha2" placeholder="Confirme a senha" class="form-control" value="" />
+                        </div>
+
+                        <button type="button" id="btnCadastrar" class="btn btn-success">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- COMO JOGAR -->
+        <a name="como-jogar"></a>
+        <div class="separador-tela">
+
+            <div class="sub-titulo h2">
+                Como Jogar?
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        A ideia é simples, cada numero representa o ataque a uma casa adjacente no tabuleiro.
+                        <br />
+                        Portanto basta arrastar a carta ideal para a posição no tabuleiro desejada,
+                        vence o game quem tiver mais cartas da sua cor no tabuleiro.
+                        <br />
+                        <br />
+                        <b>No menu do game é possível aprender detalhadamente na aba "Tutorial".</b>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- CARTAS -->
+        <a name="cartas"></a>
+        <div class="separador-tela">
+
+            <div class="sub-titulo h2">
+                Cartas
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        Em breve...
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- NOTAS DO CRIADOR -->
+        <a name="notas"></a>
+        <div class="separador-tela">
+
+            <div class="sub-titulo h2">
+                Notas do Criador
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        Por enquanto o game está em uma versão BETA, porque existem várias coisas que precisam mudar para melhorar
+                        a interatividade dos jogadores, estas mudanças podem demorar um bucado.
+                    </p>
+                    <h3>Para que servirá as cores das cartas afinal?</h3>
+                    <p>
+                        Não é apenas nivel de poder, pelo menos não deveria ser, para aumentar a estratégia do game futuramente terá restrições
+                        para o uso das cartas, imagina se um dia este jogo se tornar on-line? será impossível derrotar alguém com 5 cartas de rank 5.
+                        <br />
+                        <br />
+                        A questão de LVL do game ainda não é relevante e nem funciona, porém quando funcionar o histórico de partidas dará algum significado
+                        por minimo que seja, futuramente o LVL fará melhorias na quantidade de cartas mais fortes em casos mais variados de partidas.
+                    </p>
+                    <h3>Problemas com direitos de autorais ou achou algo ofensivo?</h3>
+                    <p>
+                        De fato, por usar muitas cartas e pela pressa não fui detalhista nem mesmo sobre os artistas
+                        estava pensando em alguma forma para compensar porém seria massante revistar cada imagem, na realidade garantir
+                        que o criador da imagem tenha seu nome não significa que não esteja usando games e animes que eu criei, não, eu não criei e nem sou dono de nenhum desdes animes,
+                        games ou seja lá o que existe como tema ou referência neste card game, eu fiz apenas o código do card game e só isso!
+                        de qualquer forma se realmente receber reclamações posso pensar em voltar atrás mas irá atrazar o desenvolvimento do game.
+                        <br />
+                        de qualquer forma é tudo questão de entrar em contato.
+                    </p>
+                    <h3>BUGS?</h3>
+                    <p>
+                        Achou Bugs?
+                        <br />
+                        entre em contato, é bom saber sobre os bugs do game.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- CONTATO -->
+        <a name="contato"></a>
+        <div class="separador-tela">
+
+            <div class="sub-titulo h2">
+                Contato
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        Para entrar em contato mande um email, quando possível darei uma resposta:
+                        <br />
+                        <br />
+                        jorge.valdemar9999@gmail.com
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div id="footer">
+
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    (function () {
+        var bloqueio = false;
+
+        $('#btnEntrar').click(function () {
+            location.href = '/Login';
+        });
+
+        $('#btnCadastrar').click(function () {
+            if (bloqueio) return;
+            bloqueio = true;
+
+            var senha = $('#senha').val();
+            var senha2 = $('#senha2').val();
+
+            if (senha != senha2) {
+                alert('A confirmação da senha não confere.');
+                bloqueio = false;
+                return;
+            }
+
+            var dados = {
+                Nome: $('#nome').val(),
+                Email: $('#email').val(),
+                Senha: senha
+            };
+
+            $.ajax({
+                type: "POST",
+                url: "/Aplicacao/Home/Home.ashx",
+                data: "data=" + JSON.stringify(dados),
+                success: function (resp) {
+                    bloqueio = false;
+                    resp = JSON.parse(resp);
+
+                    if (resp.Erro) {
+                        alert('Erro ao cadastrar: ' + resp.ErroDescricao);
+                    } else {
+                        alert('Enviamos um E-mail de confirmação, pode levar alguns minutos para chegar, obrigado!');
+                        location.href = '/Login';
+                    };
+
+                },
+                error: function () {
+                    bloqueio = false;
+                    alert('houve um problema com a resposta do servidor.');
+                },
+                statusCode: {
+                    404: function () {
+                        bloqueio = false;
+                        alert('Erro status 404, recurso não encontrado.');
+                    }
+                }
+            });
+
+        });
+    })();
+</script>
+

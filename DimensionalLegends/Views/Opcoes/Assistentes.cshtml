@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Assistentes";
+    ViewBag.Controller = "Opcoes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="divisorContent row">
+    <div id="assistenteOpcoes" class="col-md-3" style="margin-top: 30px">
+        <h4>
+            Assistente 
+            <br />
+            selecionado:
+        </h4>
+        <div id="assistente" class="listaOpcao" style="background-image: url({{ '/Imagens/cards/assistentes/'+main.opcoes.Assistente.Imagem }});"></div>
+        <br style="clear: both;" />
+        <div id="assistenteNome" class="listaOpcao"><label>Nome:</label> {{ main.opcoes.Assistente.Nome }}</div>
+
+        <a href="javascript:void(0);" id="salvarAssistente" class="listaOpcao" data-toggle="dica" data-descr="Salvar mudanças e voltar para o menu.">
+            Salvar
+        </a>
+    </div>
+
+    <div class="col-md-9">
+        <h3>Selecione um assistente</h3>
+        
+        <ul id="listaAssistentes">
+            <li ng-repeat="x in listaAssistentes">
+                <div class="assistente listaOpcao" data-toggle="dica" id="assistente{{ x.ChibiId }}" style="background-image: url({{ '/Imagens/cards/assistentes/'+x.Imagem }});" data-img="{{ x.Imagem }}" data-descr="{{ x.Existe ? x.Nome : 'Continue adquirindo medalhas para me liberar.' }}" data-existe="{{ x.Existe }}"></div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+@section scripts {
+    
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Game/opcoes.js")"></script>
+
+}
+
+

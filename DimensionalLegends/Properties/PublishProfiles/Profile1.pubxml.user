@@ -1,0 +1,1179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>
+    </TimeStampOfAssociatedLegacyPublishXmlFile>
+    <_PublishTargetUrl>C:\Users\jorge\Documents\Visual Studio 2013\Projects\Prod\DL</_PublishTargetUrl>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKJB1IiSxIEu7NZxcE8f7ggAAAAACAAAAAAAQZgAAAAEAACAAAACAHyfZbhEMLAuxxVddqwTZOFxMUZx2DA04159TVh56mwAAAAAOgAAAAAIAACAAAAA2P3OAjbZPwpB1eM84frRdrQm+IHZma9OnG90IAkpmIyAAAADaQMz1CwJ88q+mfFDy5DqofaZizM/GjQHXcKRDEeyab0AAAADtHTjgotyv0UfmP5bfz9KifB8ijgh5La7pFxZn/jo1BdI6WnbvB1NXBZezrnLLJe2zHn1J1OW3MyZbXJq8oQlP</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Aplicacao/Arcade/ListarFases.ashx">
+      <publishTime>02/15/2015 17:27:30</publishTime>
+    </File>
+    <File Include="Aplicacao/Arena/ConfigurarEntrada.ashx">
+      <publishTime>02/15/2015 17:27:30</publishTime>
+    </File>
+    <File Include="Aplicacao/Arena/TurnoAcao.ashx">
+      <publishTime>02/15/2015 17:27:30</publishTime>
+    </File>
+    <File Include="Aplicacao/Assistentes/Atualizar.ashx">
+      <publishTime>02/15/2015 17:27:30</publishTime>
+    </File>
+    <File Include="Aplicacao/Assistentes/Listar.ashx">
+      <publishTime>02/15/2015 17:27:30</publishTime>
+    </File>
+    <File Include="Aplicacao/Assistentes/Registrar.ashx">
+      <publishTime>02/15/2015 17:27:30</publishTime>
+    </File>
+    <File Include="Aplicacao/Assistentes/Teste.ashx">
+      <publishTime>02/15/2015 17:27:30</publishTime>
+    </File>
+    <File Include="Aplicacao/Cartas/AtualizarPlayerDeck.ashx">
+      <publishTime>02/15/2015 17:27:30</publishTime>
+    </File>
+    <File Include="Aplicacao/Cartas/LerPlayerCards.ashx">
+      <publishTime>02/15/2015 17:27:30</publishTime>
+    </File>
+    <File Include="Aplicacao/Cartas/LerPlayerDeck.ashx">
+      <publishTime>02/15/2015 17:27:30</publishTime>
+    </File>
+    <File Include="Aplicacao/Charcreate/Cadastro.ashx">
+      <publishTime>02/15/2015 17:27:30</publishTime>
+    </File>
+    <File Include="Aplicacao/Charcreate/DecksIniciais.ashx">
+      <publishTime>02/15/2015 17:27:30</publishTime>
+    </File>
+    <File Include="Aplicacao/Login.ashx">
+      <publishTime>02/15/2015 17:27:30</publishTime>
+    </File>
+    <File Include="Aplicacao/Musicas/LerMusicas.ashx">
+      <publishTime>02/15/2015 17:27:30</publishTime>
+    </File>
+    <File Include="Aplicacao/Musicas/Listar.ashx">
+      <publishTime>02/15/2015 17:27:30</publishTime>
+    </File>
+    <File Include="Aplicacao/Opcoes/Atualizar.ashx">
+      <publishTime>02/15/2015 17:27:30</publishTime>
+    </File>
+    <File Include="Aplicacao/Utils/Elementos.ashx">
+      <publishTime>02/15/2015 17:27:30</publishTime>
+    </File>
+    <File Include="Aplicacao/Utils/Opcoes.ashx">
+      <publishTime>02/15/2015 17:27:30</publishTime>
+    </File>
+    <File Include="Aplicacao/Utils/PlayerStatus.ashx">
+      <publishTime>02/15/2015 17:27:30</publishTime>
+    </File>
+    <File Include="Aplicacao/WS/Chat.ashx">
+      <publishTime>09/13/2015 17:09:28</publishTime>
+    </File>
+    <File Include="Aplicacao/WS/Versus.ashx">
+      <publishTime>09/13/2015 17:09:15</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/15/2015 17:27:13</publishTime>
+    </File>
+    <File Include="bin/Classes.dll">
+      <publishTime>09/13/2015 17:29:21</publishTime>
+    </File>
+    <File Include="bin/Content/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="bin/DimensionalLegends.dll">
+      <publishTime>09/13/2015 17:29:22</publishTime>
+    </File>
+    <File Include="bin/EngineIoClientDotNet.dll">
+      <publishTime>09/06/2015 23:56:01</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>09/13/2015 17:16:12</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WebSockets.dll">
+      <publishTime>07/09/2015 11:03:23</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>09/06/2015 23:56:01</publishTime>
+    </File>
+    <File Include="bin/QuickGraph.Data.dll">
+      <publishTime>02/15/2015 17:27:17</publishTime>
+    </File>
+    <File Include="bin/QuickGraph.dll">
+      <publishTime>02/15/2015 17:27:18</publishTime>
+    </File>
+    <File Include="bin/QuickGraph.Graphviz.dll">
+      <publishTime>02/15/2015 17:27:18</publishTime>
+    </File>
+    <File Include="bin/QuickGraph.Serialization.dll">
+      <publishTime>02/15/2015 17:27:18</publishTime>
+    </File>
+    <File Include="bin/SocketIoClientDotNet.dll">
+      <publishTime>09/06/2015 23:56:01</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>02/15/2015 17:27:14</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>02/15/2015 17:27:13</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.WebRequest.dll">
+      <publishTime>02/15/2015 17:27:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>02/15/2015 17:27:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>02/15/2015 17:27:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>02/15/2015 17:27:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="bin/System.Web.Providers.dll">
+      <publishTime>02/15/2015 17:27:13</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>02/15/2015 17:27:13</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>02/15/2015 17:27:13</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>02/15/2015 17:27:13</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>02/15/2015 17:27:13</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>02/15/2015 17:27:13</publishTime>
+    </File>
+    <File Include="bin/WebSocket4Net.dll">
+      <publishTime>09/06/2015 23:56:01</publishTime>
+    </File>
+    <File Include="Content/cadastro-char.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>02/15/2015 17:27:30</publishTime>
+    </File>
+    <File Include="Content/plugins/bootstrap-theme.css">
+      <publishTime>02/15/2015 17:27:28</publishTime>
+    </File>
+    <File Include="Content/plugins/bootstrap-theme.css.map">
+      <publishTime>02/15/2015 17:27:28</publishTime>
+    </File>
+    <File Include="Content/plugins/bootstrap-theme.min.css">
+      <publishTime>02/15/2015 17:27:28</publishTime>
+    </File>
+    <File Include="Content/plugins/bootstrap.css">
+      <publishTime>02/15/2015 17:27:28</publishTime>
+    </File>
+    <File Include="Content/plugins/bootstrap.css.map">
+      <publishTime>02/15/2015 17:27:28</publishTime>
+    </File>
+    <File Include="Content/plugins/bootstrap.min.css">
+      <publishTime>02/15/2015 17:27:28</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery-ui.css">
+      <publishTime>07/26/2015 17:45:33</publishTime>
+    </File>
+    <File Include="Content/plugins/row-fluid/row-fluid-12.css">
+      <publishTime>02/15/2015 17:27:28</publishTime>
+    </File>
+    <File Include="Content/plugins/row-fluid/row-fluid-12.min.css">
+      <publishTime>02/15/2015 17:27:28</publishTime>
+    </File>
+    <File Include="Content/plugins/row-fluid/row-fluid-15.css">
+      <publishTime>02/15/2015 17:27:28</publishTime>
+    </File>
+    <File Include="Content/plugins/row-fluid/row-fluid-15.min.css">
+      <publishTime>02/15/2015 17:27:28</publishTime>
+    </File>
+    <File Include="Content/plugins/row-fluid/row-fluid-16.css">
+      <publishTime>02/15/2015 17:27:28</publishTime>
+    </File>
+    <File Include="Content/plugins/row-fluid/row-fluid-16.min.css">
+      <publishTime>02/15/2015 17:27:28</publishTime>
+    </File>
+    <File Include="Content/plugins/row-fluid/row-fluid-24.css">
+      <publishTime>02/15/2015 17:27:28</publishTime>
+    </File>
+    <File Include="Content/plugins/row-fluid/row-fluid-24.min.css">
+      <publishTime>02/15/2015 17:27:28</publishTime>
+    </File>
+    <File Include="Content/plugins/row-fluid/row-fluid-5.css">
+      <publishTime>02/15/2015 17:27:28</publishTime>
+    </File>
+    <File Include="Content/plugins/row-fluid/row-fluid-5.min.css">
+      <publishTime>02/15/2015 17:27:28</publishTime>
+    </File>
+    <File Include="Content/plugins/row-fluid/row-fluid-7.css">
+      <publishTime>02/15/2015 17:27:28</publishTime>
+    </File>
+    <File Include="Content/plugins/row-fluid/row-fluid-7.min.css">
+      <publishTime>02/15/2015 17:27:28</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>09/13/2015 15:42:38</publishTime>
+    </File>
+    <File Include="Content/textures/ground.jpg">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/textures/ice-1.jpg">
+      <publishTime>02/16/2015 18:25:08</publishTime>
+    </File>
+    <File Include="Content/textures/plane-1.jpg">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/textures/sky-2.jpg">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/textures/sky.jpg">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/textures/stone-1.jpg">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/textures/stone-2-b.jpg">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/textures/stone-3.jpg">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/textures/teto-1.jpg">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/textures/water.jpg">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_222222_256x240.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_454545_256x240.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_888888_256x240.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery-ui.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.accordion.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.all.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.autocomplete.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.base.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.button.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.core.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.datepicker.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.dialog.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.progressbar.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.resizable.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.selectable.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.slider.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.tabs.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.theme.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_222222_256x240.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_454545_256x240.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_888888_256x240.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery-ui.min.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.accordion.min.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.autocomplete.min.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.button.min.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.core.min.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.datepicker.min.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.dialog.min.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.progressbar.min.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.resizable.min.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.selectable.min.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.slider.min.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.tabs.min.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.theme.min.css">
+      <publishTime>02/15/2015 17:27:29</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>02/15/2015 17:27:16</publishTime>
+    </File>
+    <File Include="Imagens/bg-dl-final.jpg">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/bt_destaq.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/cards/assistentes/kurisu.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/cards/assistentes/maka.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/cards/card_molde - original.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/cards/card_molde.png">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/1-unison-yagami-hayate-web.png">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/1.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/10.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/11.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/12.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/13.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/14.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/15.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/16.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/17.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/18.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/19.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/2.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/20.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/21.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/22.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/23.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/24.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/26.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/28.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/29.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/3.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/31.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/32.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/33.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/34.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/35.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/36.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/37.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/38.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/39.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/4.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/40.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/41.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/42.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/43.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/44.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/45.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/46.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/47.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/48.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/5.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/6.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/7.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/8.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/cartas/9.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/cards/compass/01.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/cards/compass/02.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/cards/compass/03.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/cards/compass/04.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/cards/compass/05.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/cards/compass/06.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/cards/compass/07.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/cards/compass/08.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/cards/compass/s-a1.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/cards/compass/s-a2.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/cards/compass/s-a3.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/cards/compass/s-b1.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/cards/compass/s-b2.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/cards/compass/s-c1.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/cards/compass/s-c2.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/cards/compass/s-c3.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/chain.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/chrome.jpg">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/construcao.jpg">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/destaques.jpg">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/destaq_title.png">
+      <publishTime>02/15/2015 17:27:33</publishTime>
+    </File>
+    <File Include="Imagens/flash-450x450.jpg">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/fundo.jpg">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/hover.jpg">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/imagens.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/imagens_chain.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/infos.png">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/line.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/linha.jpg">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/manutencao.jpg">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/menu.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/molde.jpg">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/needless.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/null.jpg">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/rena.png">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/reviewanimes.jpg">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/reviewanimes_02.jpg">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/reviewanimes_04.jpg">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/reviewanimes_10.jpg">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/reviewanimes_13.jpg">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/reviewanimes_17.jpg">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/reviewanimes_21.jpg">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/reviewanimes_24.jpg">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/reviewanimes_26.jpg">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Imagens/topos/anime1.jpg">
+      <publishTime>02/15/2015 17:27:32</publishTime>
+    </File>
+    <File Include="Imagens/topos/anime10.jpg">
+      <publishTime>02/15/2015 17:27:33</publishTime>
+    </File>
+    <File Include="Imagens/topos/anime11.jpg">
+      <publishTime>02/15/2015 17:27:33</publishTime>
+    </File>
+    <File Include="Imagens/topos/anime12.jpg">
+      <publishTime>02/15/2015 17:27:33</publishTime>
+    </File>
+    <File Include="Imagens/topos/anime2.jpg">
+      <publishTime>02/15/2015 17:27:33</publishTime>
+    </File>
+    <File Include="Imagens/topos/anime3.jpg">
+      <publishTime>02/15/2015 17:27:33</publishTime>
+    </File>
+    <File Include="Imagens/topos/anime4.jpg">
+      <publishTime>02/15/2015 17:27:33</publishTime>
+    </File>
+    <File Include="Imagens/topos/anime5.jpg">
+      <publishTime>02/15/2015 17:27:33</publishTime>
+    </File>
+    <File Include="Imagens/topos/anime6.jpg">
+      <publishTime>02/15/2015 17:27:33</publishTime>
+    </File>
+    <File Include="Imagens/topos/anime7.jpg">
+      <publishTime>02/15/2015 17:27:33</publishTime>
+    </File>
+    <File Include="Imagens/topos/anime8.jpg">
+      <publishTime>02/15/2015 17:27:33</publishTime>
+    </File>
+    <File Include="Imagens/topos/anime9.jpg">
+      <publishTime>02/15/2015 17:27:33</publishTime>
+    </File>
+    <File Include="Imagens/topos/null.jpg">
+      <publishTime>02/15/2015 17:27:33</publishTime>
+    </File>
+    <File Include="Imagens/topos/_notes/dwsync.xml">
+      <publishTime>02/15/2015 17:27:33</publishTime>
+    </File>
+    <File Include="Imagens/_notes/dwsync.xml">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/03E29812-2CAC-4DDF-9E1C-04381DDC3A23.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/0B52693A-52E7-41FF-985D-CAFDA748E387.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/0BEC1831-643B-48AE-8702-9DB72424DC3B.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/0D22B3AD-63E9-4479-AE1C-661522C0B137.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/0DD52A5B-F635-46A1-80F2-DC3439AB7314.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/0F6C481E-C8E6-4D3E-9699-FF12570A8326.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/11FF82BD-6BF1-4852-8BF7-7A00FBFD37F8.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/17028C86-DDD5-4850-9AB1-DF990AE607CC.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/1C0570E0-53D3-4394-9729-CA6BDCC43023.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/1CBE4ADD-6849-48F3-85A4-F585139A7592.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/1DDBB123-7C94-4680-8F25-2080EDADCC72.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/1FCAE4E4-2CB3-401E-B6C1-5845AC1D542F.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/23261CB0-A915-462E-A725-18625D516405.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/300A1A41-C8A0-47F0-8183-1D15352BC863.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/38281A5C-AE9C-45BE-911E-B2E6CF353A1D.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/39DE9530-DE06-42F6-9FB2-D2DB3499DA8B.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/3AF17A41-2245-4CDB-9BDF-F3E7371A4737.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/3C2A5F63-9572-44C5-B8E1-A7AAAB1DF0DB.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/4054680E-3D45-4B2F-8F28-66CE1E37A256.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/420B9BC3-568D-4614-BAAB-254ED706C6CE.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/44A1818B-10AA-4232-895F-2960D415EB2A.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/4724F11D-8B67-4521-B00E-50A4C6BCC18B.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/4A747BE5-63BE-4DC8-A745-D02FFAEE7AAB.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/4EDFF022-6D13-42D5-80D5-7A8552A40611.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/53586F4F-74DB-406D-B97C-97C478170BD0.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/5B0549FF-4C7E-49F5-AA21-FC2249986254.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/5DAE792A-9A8A-426C-87A4-7F6F9BF616D9.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/5EDF3B06-0B41-47F1-8B44-D502BD827F84.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/5FE47585-99B4-4699-8ADD-B09558D425BD.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/60E7787F-5D4A-4A31-888E-645BD9E3E571.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/614231CD-5D10-42A9-8F8C-C06C6001F78B.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/6AE9FA13-EB1E-4540-B55C-8A899BF3D0A9.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/6B7DC0DF-5A43-4F2E-B67E-750F3A4BA401.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/6CCE69A2-3B79-41DA-A6DE-BFAE0DB216D0.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/6E59AE58-9EFB-4040-B18F-575AF0D4A930.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/6FC38FF0-A06C-4E26-BC61-12F9FFE64D00.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/866CDAEA-48E7-4502-B69B-B691593D97BC.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/8C1CFC1B-7579-4945-AFD3-177F4EB63A66.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/8C38441E-5742-451D-BEA9-57F246D34E1E.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/8C7409E0-2F97-480B-8330-891046EC4B5C.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/90BE43BE-0782-48E1-A9DA-25C818D04856.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/9173079D-F9BA-438C-9831-A9F98B0BEE4A.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/9CB4FAB7-70DF-4D81-BE4A-A045964E3A8F.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/A557FC7F-C12E-4505-A615-B2B20F5E70F8.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/B1A3BF20-708A-4893-8B51-F0C17E6D5D15.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/B61C5BD9-08F1-4FF5-9EF6-9762947D8C87.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/B6B7857C-0F3A-4592-9F06-9D063F1331A1.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/B70A7216-0F8B-4905-AD2B-D263F514152E.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/BC1E5E22-7DA4-495A-8AAC-1B531DD99951.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/C3001716-D538-4C6B-B211-FBA4BEA8216B.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/C678D893-C7A8-470A-BAB6-E9A3B0D8BEA2.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/C82895CE-6B9E-4D18-8AAA-AF74C5253386.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/C96D1271-B88C-4FED-8509-062552A1AB60.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/C9D52E9B-A5CB-45BB-B1F2-6719C92F88A7.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/CAE58533-200F-497F-AE97-46EDEAB6FF74.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/CF4A42AB-91BD-41BC-9E80-46DCF0C56F95.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/CFF2A6CA-DB32-4A2C-B206-116CD147CE45.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/D8487703-5579-45F0-B9A9-D516FBC58076.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/E7ED0A0C-5A70-4D7A-B8EB-32F33A4486DA.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/ECDB2309-C07E-4285-8E8D-442F736EA60C.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/EF5C83FA-3EC0-4954-B554-3E4CFA6E940F.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/F3595F07-CAD4-4C53-B5D6-A9357A4B71C4.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/F4D52874-774D-4FB8-B1A1-544D75BFFC37.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/FCC60794-FFB4-4761-906D-ECA8CD0CA881.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Log/ArenaState/helloworld.txt">
+      <publishTime>02/15/2015 17:27:31</publishTime>
+    </File>
+    <File Include="Musicas/MP3/0.mp3">
+      <publishTime>02/15/2015 17:27:17</publishTime>
+    </File>
+    <File Include="Musicas/MP3/1.mp3">
+      <publishTime>02/15/2015 17:27:17</publishTime>
+    </File>
+    <File Include="Musicas/MP3/2.mp3">
+      <publishTime>02/15/2015 17:27:17</publishTime>
+    </File>
+    <File Include="Musicas/MP3/3.mp3">
+      <publishTime>02/15/2015 17:27:17</publishTime>
+    </File>
+    <File Include="Musicas/MP3/4.mp3">
+      <publishTime>02/15/2015 17:27:17</publishTime>
+    </File>
+    <File Include="Musicas/MP3/5.mp3">
+      <publishTime>02/15/2015 17:27:17</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>09/13/2015 17:17:04</publishTime>
+    </File>
+    <File Include="Scripts/Babylon/babylon-debug.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/Babylon/babylon.d.ts">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/Babylon/babylon.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/Babylon/cannon.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/Babylon/Oimo.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/Game/arcadeFases.js">
+      <publishTime>03/08/2015 23:11:14</publishTime>
+    </File>
+    <File Include="Scripts/Game/arcadeFases2d.js">
+      <publishTime>03/29/2015 17:00:14</publishTime>
+    </File>
+    <File Include="Scripts/Game/arena.js">
+      <publishTime>08/30/2015 18:53:50</publishTime>
+    </File>
+    <File Include="Scripts/Game/cadastro.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/Game/login.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/Game/main.js">
+      <publishTime>09/13/2015 17:32:37</publishTime>
+    </File>
+    <File Include="Scripts/Game/menuPrincipal.js">
+      <publishTime>09/13/2015 16:11:20</publishTime>
+    </File>
+    <File Include="Scripts/Game/minhasCartas.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/Game/opcoes.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/Game/perfil.js">
+      <publishTime>09/13/2015 15:39:27</publishTime>
+    </File>
+    <File Include="Scripts/Game/selecaoCartas.js">
+      <publishTime>04/26/2015 16:01:45</publishTime>
+    </File>
+    <File Include="Scripts/Game/tutorial.js">
+      <publishTime>09/13/2015 15:57:41</publishTime>
+    </File>
+    <File Include="Scripts/Game/versus.js">
+      <publishTime>09/13/2015 17:23:27</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1-vsdoc.js">
+      <publishTime>02/15/2015 17:27:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.min.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.20.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.20.min.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui.js">
+      <publishTime>07/26/2015 17:44:13</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate-vsdoc.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>02/15/2015 17:27:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>02/15/2015 17:27:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/knockout-2.1.0.debug.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/knockout-2.1.0.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.5.3.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/angular.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/angular.min.js.map">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/bootstrap.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/enscroll.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/jquery-css-transform.js">
+      <publishTime>05/04/2011 18:14:20</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/parsley.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/pt-br.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/rotate3Di.js">
+      <publishTime>10/04/2012 15:37:59</publishTime>
+    </File>
+    <File Include="Scripts/Utils/BDLF.js">
+      <publishTime>03/08/2015 22:59:10</publishTime>
+    </File>
+    <File Include="Scripts/Utils/datainfo.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Scripts/Utils/modal.js">
+      <publishTime>03/29/2015 10:59:07</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>02/15/2015 17:27:15</publishTime>
+    </File>
+    <File Include="Views/Arcade/Arena.cshtml">
+      <publishTime>08/30/2015 19:34:53</publishTime>
+    </File>
+    <File Include="Views/Arcade/Index.cshtml">
+      <publishTime>03/27/2015 17:23:15</publishTime>
+    </File>
+    <File Include="Views/Arcade/Index3D.cshtml">
+      <publishTime>03/27/2015 15:41:35</publishTime>
+    </File>
+    <File Include="Views/Arcade/SelecaoCartas.cshtml">
+      <publishTime>04/26/2015 16:02:57</publishTime>
+    </File>
+    <File Include="Views/cadastro/Index.cshtml">
+      <publishTime>02/15/2015 17:27:16</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>09/13/2015 11:30:42</publishTime>
+    </File>
+    <File Include="Views/Login/Index.cshtml">
+      <publishTime>02/15/2015 17:27:16</publishTime>
+    </File>
+    <File Include="Views/MenuPrincipal/Index.cshtml">
+      <publishTime>02/15/2015 17:27:16</publishTime>
+    </File>
+    <File Include="Views/MinhasCartas/Index.cshtml">
+      <publishTime>02/15/2015 17:27:16</publishTime>
+    </File>
+    <File Include="Views/Opcoes/Assistentes.cshtml">
+      <publishTime>02/15/2015 17:27:16</publishTime>
+    </File>
+    <File Include="Views/Opcoes/Index.cshtml">
+      <publishTime>02/15/2015 17:27:16</publishTime>
+    </File>
+    <File Include="Views/Perfil/Index.cshtml">
+      <publishTime>09/13/2015 16:11:35</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>02/15/2015 17:27:16</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>09/13/2015 11:29:06</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutOpen.cshtml">
+      <publishTime>09/13/2015 11:30:10</publishTime>
+    </File>
+    <File Include="Views/Tutorial/Index.cshtml">
+      <publishTime>09/13/2015 16:03:10</publishTime>
+    </File>
+    <File Include="Views/Versus/Index.cshtml">
+      <publishTime>09/13/2015 16:05:18</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>02/15/2015 17:27:16</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>09/13/2015 11:23:11</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/13/2015 17:29:22</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

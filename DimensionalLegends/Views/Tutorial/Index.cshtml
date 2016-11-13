@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Tutorial";
+    ViewBag.Controller = "Tutorial";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="divisorContent row">
+    <div class="col-md-12">
+        <h3>Como jogar Dimensional Legends</h3>
+
+        Desculpe, o tutorial ainda não está pronto.
+        <br />
+        <br />
+        <button type="button" class="btn btn-default btn-xs voltar" data-toggle="dica" data-descr="Voltar para a tela inicial">
+            Voltar
+        </button>
+
+    </div>
+</div>
+
+@section scripts {
+
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Game/tutorial.js")"></script>
+
+}

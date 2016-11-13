@@ -1,0 +1,214 @@
+﻿@{
+    ViewBag.Title = "Index";
+    ViewBag.Controller = "MinhasCartas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="divisorContent row">
+    <div class="col-md-12" style="margin-bottom: 10px">
+        <h5>Clique no "+" das cartas a direita para adicinar a carta no seu deck</h5>
+    </div>
+    
+    <div id="colunaDeck" class="col-md-6">
+        <h5>Cartas no deck: {{ listaDeck.length }} / 10</h5>
+        
+        <div class="row filtro">
+            <div class="col-md-12">
+                <div class="busca-rank">
+                    <div style="float: left; padding-right: 10px;">Filtrar por rank:</div>
+                    <div class="rank-ico" data-filtro-attr="rank" data-filtro="%1%"  data-toggle="dica" data-descr="Rank 1: Normal"><span class="glyphicon glyphicon-bookmark rank-1" aria-hidden="true"></span></div> 
+                    <div class="rank-ico" data-filtro-attr="rank" data-filtro="%2%" data-toggle="dica" data-descr="Rank 2: Avançado"><span class="glyphicon glyphicon-bookmark rank-2" aria-hidden="true"></span></div> 
+                    <div class="rank-ico" data-filtro-attr="rank" data-filtro="%3%" data-toggle="dica" data-descr="Rank 3: Raro"><span class="glyphicon glyphicon-bookmark rank-3" aria-hidden="true"></span></div> 
+                    <div class="rank-ico" data-filtro-attr="rank" data-filtro="%4%" data-toggle="dica" data-descr="Rank 4: Super Raro"><span class="glyphicon glyphicon-bookmark rank-4" aria-hidden="true"></span></div> 
+                    <div class="rank-ico" data-filtro-attr="rank" data-filtro="%5%" data-toggle="dica" data-descr="Rank 5: Épico"><span class="glyphicon glyphicon-bookmark rank-5" aria-hidden="true"></span></div> 
+                    <div class="rank-ico" data-filtro-attr="rank" data-filtro="%0%" data-toggle="dica" data-descr="Rank 0: Lendário <br /> Carta limitada a jogadores excepcionais"><span class="glyphicon glyphicon-bookmark rank-0" aria-hidden="true"></span></div> 
+                </div>
+                
+                <button type="button" id="salvarDeck" class="btn btn-primary btn-xs" style="float: right; margin-left: 13px;" data-toggle="dica" data-descr="Salvar o Deck">
+                    Salvar
+                </button>
+                
+                <button type="button" class="btn btn-default btn-xs voltar" style="float: right;" data-toggle="dica" data-descr="Voltar e ignorar as modificações">
+                    Voltar
+                </button>
+            </div>
+        </div>
+
+        <div class="row filtro">
+            <div class="col-md-12">
+                <div class="busca-elemento">
+                    <div style="float: left;padding-right: 10px;">Filtrar por elemento:</div>
+                    <div class="elemento-ico" data-filtro-attr="ElementoId" data-filtro="%4%" data-toggle="dica" data-descr="Raio"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span></div> 
+                    <div class="elemento-ico" data-filtro-attr="ElementoId" data-filtro="%1%" data-toggle="dica" data-descr="Fogo"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span></div> 
+                    <div class="elemento-ico" data-filtro-attr="ElementoId" data-filtro="%6%" data-toggle="dica" data-descr="Trévas"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></div> 
+                    <div class="elemento-ico" data-filtro-attr="ElementoId" data-filtro="%7%" data-toggle="dica" data-descr="Agua"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span></div> 
+                    <div class="elemento-ico" data-filtro-attr="ElementoId" data-filtro="%5%" data-toggle="dica" data-descr="Luz"><span class="glyphicon glyphicon-certificate" aria-hidden="true"></span></div> 
+                    <div class="elemento-ico" data-filtro-attr="ElementoId" data-filtro="%8%" data-toggle="dica" data-descr="Vento"><span class="glyphicon glyphicon-cloud" aria-hidden="true"></span></div> 
+                    <div class="elemento-ico" data-filtro-attr="ElementoId" data-filtro="%3%" data-toggle="dica" data-descr="Terra"><span class="glyphicon glyphicon-tower" aria-hidden="true"></span></div> 
+                    <div class="elemento-ico" data-filtro-attr="ElementoId" data-filtro="%2%" data-toggle="dica" data-descr="Gelo"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></div>
+                    <div class="elemento-ico" data-filtro-attr="ElementoId" data-filtro="%9%" data-toggle="dica" data-descr="Não elemental"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></div>
+                </div>
+        
+                <button type="button" id="removerDeck" class="btn btn-default btn-xs" style="float: right; margin-left: 4px;" data-toggle="dica" data-descr="Limpar o Deck">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </button>
+
+                <button type="button" class="btn btn-default btn-xs disabled" style="float: right;" data-toggle="dica" data-descr="Exibir informações">
+                    <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                </button>
+
+                <button type="button" class="btn btn-default btn-xs disabled" style="float: right;" data-toggle="dica" data-descr="Exibir atributos">
+                    <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                </button>
+                
+                <button type="button" id="limparDeck" class="btn btn-default btn-xs" style="float: right;" data-toggle="dica" data-descr="Desfazer filtros">
+                    <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+
+        <div id="deck" class="enscrollbox">
+            <ul>
+                <li ng-repeat="ld in listaDeck" data-ElementoId="%{{ ld.Elemento.ElementoId }}%" data-rank="%{{ ld.Rank }}%">
+                    <div class="listItemCarta listaOpcao rank-{{ ld.Rank }}" id="deck-{{ ld.Numero }}" data-uso="{{ ld.EmUso }}" style="background-image: url(/Imagens/cards/cartas/{{ ld.Numero }}.jpg);">
+                        <div class="itemEtc" data-toggle="carta" data-info="deck"></div>
+                        <div class="itemInfo">
+                            {{ ld.Numero }} - {{ ld.Nome }}    
+                        
+                            <br />
+
+                            <div ng-if="ld.Elemento.ElementoId == 4" class="elemento-ico" data-toggle="dica" data-descr="{{ ld.Elemento.Elemento }}"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span></div> 
+                            <div ng-if="ld.Elemento.ElementoId == 1" class="elemento-ico" data-toggle="dica" data-descr="{{ ld.Elemento.Elemento }}"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span></div> 
+                            <div ng-if="ld.Elemento.ElementoId == 6" class="elemento-ico" data-toggle="dica" data-descr="{{ ld.Elemento.Elemento }}"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></div> 
+                            <div ng-if="ld.Elemento.ElementoId == 7" class="elemento-ico" data-toggle="dica" data-descr="{{ ld.Elemento.Elemento }}"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span></div> 
+                            <div ng-if="ld.Elemento.ElementoId == 5" class="elemento-ico" data-toggle="dica" data-descr="{{ ld.Elemento.Elemento }}"><span class="glyphicon glyphicon-certificate" aria-hidden="true"></span></div> 
+                            <div ng-if="ld.Elemento.ElementoId == 8" class="elemento-ico" data-toggle="dica" data-descr="{{ ld.Elemento.Elemento }}"><span class="glyphicon glyphicon-cloud" aria-hidden="true"></span></div> 
+                            <div ng-if="ld.Elemento.ElementoId == 3" class="elemento-ico" data-toggle="dica" data-descr="{{ ld.Elemento.Elemento }}"><span class="glyphicon glyphicon-tower" aria-hidden="true"></span></div> 
+                            <div ng-if="ld.Elemento.ElementoId == 2" class="elemento-ico" data-toggle="dica" data-descr="{{ ld.Elemento.Elemento }}"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></div>
+            
+                            <button type="button" class="btn btn-default btn-xs deletar-card-deck" style="float: right;" data-toggle="dica" data-descr="Remover do Deck">
+                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            </button>
+
+                            <button type="button" class="btn btn-default btn-xs" data-toggle="carta" data-info="deck" style="float: right;">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+
+                            <!--<div class="glyphicon glyphicon-plus"></div>-->
+                        </div>
+                    </div>
+                </li>
+                <li class="nenhum-resultado">
+                    <div class="listItemCarta listaOpcao">
+                        <div class="itemEtc"></div>
+                        <div class="itemInfo">Nenhum resultado encontrado</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div id="colunaCartas" class="col-md-6">
+        <h5>Total de cartas: {{ listaCartas.length }}</h5>
+        
+        <div class="row filtro">
+            <div class="col-md-12">
+                <div class="busca-rank">
+                    <div style="float: left; padding-right: 10px;">Filtrar por rank:</div>
+                    <div class="rank-ico" data-filtro-attr="rank" data-filtro="%1%"  data-toggle="dica" data-descr="Rank 1: Normal"><span class="glyphicon glyphicon-bookmark rank-1" aria-hidden="true"></span></div> 
+                    <div class="rank-ico" data-filtro-attr="rank" data-filtro="%2%" data-toggle="dica" data-descr="Rank 2: Avançado"><span class="glyphicon glyphicon-bookmark rank-2" aria-hidden="true"></span></div> 
+                    <div class="rank-ico" data-filtro-attr="rank" data-filtro="%3%" data-toggle="dica" data-descr="Rank 3: Raro"><span class="glyphicon glyphicon-bookmark rank-3" aria-hidden="true"></span></div> 
+                    <div class="rank-ico" data-filtro-attr="rank" data-filtro="%4%" data-toggle="dica" data-descr="Rank 4: Super Raro"><span class="glyphicon glyphicon-bookmark rank-4" aria-hidden="true"></span></div> 
+                    <div class="rank-ico" data-filtro-attr="rank" data-filtro="%5%" data-toggle="dica" data-descr="Rank 5: Épico"><span class="glyphicon glyphicon-bookmark rank-5" aria-hidden="true"></span></div> 
+                    <div class="rank-ico" data-filtro-attr="rank" data-filtro="%0%" data-toggle="dica" data-descr="Rank 0: Lendário <br /> Carta limitada a jogadores excepcionais"><span class="glyphicon glyphicon-bookmark rank-0" aria-hidden="true"></span></div> 
+                </div>
+
+                <div class="busca-lista input-group">
+                    <input id="filter" type="text" class="form-control" placeholder="Digite para filtrar a lista">
+                </div>
+            </div>
+        </div>
+
+        <div class="row filtro">
+            <div class="col-md-12">
+                <div class="busca-elemento">
+                    <div style="float: left;padding-right: 10px;">Filtrar por elemento:</div>
+                    <div class="elemento-ico" data-filtro-attr="ElementoId" data-filtro="%4%" data-toggle="dica" data-descr="Raio"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span></div> 
+                    <div class="elemento-ico" data-filtro-attr="ElementoId" data-filtro="%1%" data-toggle="dica" data-descr="Fogo"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span></div> 
+                    <div class="elemento-ico" data-filtro-attr="ElementoId" data-filtro="%6%" data-toggle="dica" data-descr="Trévas"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></div> 
+                    <div class="elemento-ico" data-filtro-attr="ElementoId" data-filtro="%7%" data-toggle="dica" data-descr="Agua"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span></div> 
+                    <div class="elemento-ico" data-filtro-attr="ElementoId" data-filtro="%5%" data-toggle="dica" data-descr="Luz"><span class="glyphicon glyphicon-certificate" aria-hidden="true"></span></div> 
+                    <div class="elemento-ico" data-filtro-attr="ElementoId" data-filtro="%8%" data-toggle="dica" data-descr="Vento"><span class="glyphicon glyphicon-cloud" aria-hidden="true"></span></div> 
+                    <div class="elemento-ico" data-filtro-attr="ElementoId" data-filtro="%3%" data-toggle="dica" data-descr="Terra"><span class="glyphicon glyphicon-tower" aria-hidden="true"></span></div> 
+                    <div class="elemento-ico" data-filtro-attr="ElementoId" data-filtro="%2%" data-toggle="dica" data-descr="Gelo"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></div>
+                    <div class="elemento-ico" data-filtro-attr="ElementoId" data-filtro="%9%" data-toggle="dica" data-descr="Não elemental"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></div>
+                </div>
+        
+                <button type="button" class="btn btn-default btn-xs disabled" style="float: right;" data-toggle="dica" data-descr="Exibir informações">
+                    <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                </button>
+
+                <button type="button" class="btn btn-default btn-xs disabled" style="float: right;" data-toggle="dica" data-descr="Exibir atributos">
+                    <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                </button>
+                
+                <button type="button" id="limparCartas" class="btn btn-default btn-xs" style="float: right;" data-toggle="dica" data-descr="Desfazer filtros">
+                    <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+
+        <div id="listaCartas" class="enscrollbox">
+            <ul>
+                <li ng-repeat="lc in listaCartas" data-ElementoId="%{{ lc.Elemento.ElementoId }}%" data-rank="%{{ lc.Rank }}%">
+                    <div class="listItemCarta listaOpcao rank-{{ lc.Rank }}" id="deck-{{ lc.Numero }}" data-uso="{{ lc.EmUso }}" style="background-image: url(/Imagens/cards/cartas/{{ lc.Numero }}.jpg);">
+                        <div class="itemEtc" data-toggle="carta" data-info="listaCartas"></div>
+                        <div class="itemInfo">
+                            {{ lc.Numero }} - {{ lc.Nome }}    
+                            
+                            <br />
+                        
+                            <div ng-if="lc.Elemento.ElementoId == 4" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span></div> 
+                            <div ng-if="lc.Elemento.ElementoId == 1" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span></div> 
+                            <div ng-if="lc.Elemento.ElementoId == 6" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></div> 
+                            <div ng-if="lc.Elemento.ElementoId == 7" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span></div> 
+                            <div ng-if="lc.Elemento.ElementoId == 5" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-certificate" aria-hidden="true"></span></div> 
+                            <div ng-if="lc.Elemento.ElementoId == 8" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-cloud" aria-hidden="true"></span></div> 
+                            <div ng-if="lc.Elemento.ElementoId == 3" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-tower" aria-hidden="true"></span></div> 
+                            <div ng-if="lc.Elemento.ElementoId == 2" class="elemento-ico" data-toggle="dica" data-descr="{{ lc.Elemento.Elemento }}"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></div>
+            
+                            <button ng-if="lc.EmUso == true" type="button" class="btn btn-default btn-xs" style="float: right; cursor: default;" data-toggle="dica" data-descr="Carta já adicionada">
+                                <span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span>
+                            </button>
+                            
+                            <button ng-if="lc.EmUso == false" type="button" class="btn btn-default btn-xs adicionar-card" style="float: right;" data-toggle="dica" data-descr="Adicionar ao Deck">
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                            </button>
+
+                            <button type="button" class="btn btn-default btn-xs" data-toggle="carta" data-info="listaCartas" style="float: right;">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                            
+                        </div>
+                    </div>
+                </li>
+                <li class="nenhum-resultado">
+                    <div class="listItemCarta listaOpcao">
+                        <div class="itemEtc"></div>
+                        <div class="itemInfo">Nenhum resultado encontrado</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+@section scripts {
+
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Utils/datainfo.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Game/minhasCartas.js")"></script>
+
+}
+

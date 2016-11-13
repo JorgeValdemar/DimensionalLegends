@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title - Dimensional Legends</title>
+    @Styles.Render("~/Content/themes/base/css")
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/angular")
+
+    @RenderSection("styles", required: false)
+
+</head>
+<body ng-app="mainApp" ng-controller="@ViewBag.Controller">
+    <header>
+        <nav style="{{ main.user.Imagem != '' ? 'background-image: url(/Imagens/cards/cartas/' + main.user.Imagem + '.jpg);' : '' }}">
+            @Html.ActionLink("Logout", "Logout", "Login", null, new { id = "logout" })
+            <ul id="playerStatusResumo">
+                <li>Nick: {{ main.user.Nick }}</li>
+                <li>Level: {{ main.user.Level }}</li>
+                <li>Coins: {{ main.user.Coins }}</li>
+            </ul>
+        </nav>
+	</header>
+	
+	<section>
+		<article>
+            <div class="container">
+                @RenderBody()
+            <div>
+		</article>
+    </section>
+    
+    <footer>
+        <div class="modal fade" id="popupModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title">Titulo</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>cont</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Continuar</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <div id="dica" style="background-image: url(/Imagens/cards/assistentes/{{ main.opcoes.Assistente.Imagem }});">
+            <div id="dicaTxt">
+                ...
+            </div>
+        </div>
+        
+        <div class="carta forma-default" style="background-image: url(/Imagens/cards/cartas/{{ main.carta.Numero }}.jpg);">
+            <div style="position: relative; width: 100%; height: 100%; float: left; margin: 0px; padding: 0px;">
+
+                <div class="cartaMoldura"></div>
+            
+                <div ng-repeat="attr in main.defaultAttrCarta" ng-class="main.carta[attr.Atributo] != 0 ? attr.Atributo : attr.Atributo + ' hidden'">
+                    <div ng-class="main.carta[attr.Atributo] != 'E' ? main.carta[attr.Atributo] > 6 ? 'attr-ico attr-forte' : main.carta[attr.Atributo] < 3 ? 'attr-ico attr-fraco' : main.carta[attr.Atributo] == 'S' ? 'attr-ico cor-especial' : 'attr-ico' : 'attr-ico cor-elemental'" data-toggle="dica" data-descr="Ataque: {{ main.carta[attr.Atributo] != 'E' ? main.carta[attr.Atributo] : main.carta.Elemento.Elemento }}">
+                        <span ng-if="main.carta.Elemento.ElementoId == 4 && main.carta[attr.Atributo] == 'E'" class="glyphicon glyphicon-flash" aria-hidden="true">6</span> 
+                        <span ng-if="main.carta.Elemento.ElementoId == 1 && main.carta[attr.Atributo] == 'E'" class="glyphicon glyphicon-fire" aria-hidden="true">6</span> 
+                        <span ng-if="main.carta.Elemento.ElementoId == 6 && main.carta[attr.Atributo] == 'E'" class="glyphicon glyphicon-eye-open" aria-hidden="true">6</span> 
+                        <span ng-if="main.carta.Elemento.ElementoId == 7 && main.carta[attr.Atributo] == 'E'" class="glyphicon glyphicon-tint" aria-hidden="true">6</span> 
+                        <span ng-if="main.carta.Elemento.ElementoId == 5 && main.carta[attr.Atributo] == 'E'" class="glyphicon glyphicon-certificate" aria-hidden="true">6</span> 
+                        <span ng-if="main.carta.Elemento.ElementoId == 8 && main.carta[attr.Atributo] == 'E'" class="glyphicon glyphicon-cloud" aria-hidden="true">6</span> 
+                        <span ng-if="main.carta.Elemento.ElementoId == 3 && main.carta[attr.Atributo] == 'E'" class="glyphicon glyphicon-tower" aria-hidden="true">6</span> 
+                        <span ng-if="main.carta.Elemento.ElementoId == 2 && main.carta[attr.Atributo] == 'E'" class="glyphicon glyphicon-asterisk" aria-hidden="true">6</span>
+                        <span ng-if="main.carta[attr.Atributo] != 'E'" ng-class="main.carta[attr.Atributo] == 'S' ? 'cor-txt-especial' : ''">{{ main.carta[attr.Atributo] }}</span>
+                    </div> 
+                </div>
+
+                <div class="compass">
+                    <div class="rankBandeira rank-ico" data-toggle="dica" data-descr="Rank: {{ main.carta.Rank }}">
+                        <span class="glyphicon glyphicon-bookmark rank-{{ main.carta.Rank }}" aria-hidden="true"></span>
+                    </div> 
+                    <div class="circle-g rank-{{ main.carta.Rank }}">
+                        <div class="circle-img-g"></div>
+                        <div class="circle-img-m"></div>
+                        <div class="circle-setas"></div>
+                        <div class="circle-setas-v"></div>
+                    </div>
+                </div>  
+
+            </div>
+        </div>
+
+        
+        <div class="carta forma-expert" style="background-image: url(/Imagens/cards/cartas/{{ main.carta.Numero }}.jpg);">
+            <div style="position: relative; width: 100%; height: 100%; float: left; margin: 0px; padding: 0px;">
+                
+                <div class="cartaMoldura"></div>              
+
+                <div class="compass">
+                    <div ng-repeat="attr in main.defaultAttrCarta" ng-class="main.carta[attr.Atributo] == 0 ? attr.Atributo + ' attr-ico hidden' : main.carta[attr.Atributo] != 'E' ? main.carta[attr.Atributo] > 6 ? attr.Atributo + ' attr-ico attr-forte' : main.carta[attr.Atributo] < 3 ? attr.Atributo + ' attr-ico attr-fraco' : main.carta[attr.Atributo] == 'S' ? attr.Atributo + ' attr-ico cor-especial' : attr.Atributo + ' attr-ico' : attr.Atributo + ' attr-ico cor-elemental'" data-toggle="dica" data-descr="Ataque: {{ main.carta[attr.Atributo] != 'E' ? main.carta[attr.Atributo] : main.carta.Elemento.Elemento }}">
+                        <span ng-if="main.carta.Elemento.ElementoId == 4 && main.carta[attr.Atributo] == 'E'" class="glyphicon glyphicon-flash" aria-hidden="true">6</span> 
+                        <span ng-if="main.carta.Elemento.ElementoId == 1 && main.carta[attr.Atributo] == 'E'" class="glyphicon glyphicon-fire" aria-hidden="true">6</span> 
+                        <span ng-if="main.carta.Elemento.ElementoId == 6 && main.carta[attr.Atributo] == 'E'" class="glyphicon glyphicon-eye-open" aria-hidden="true">6</span> 
+                        <span ng-if="main.carta.Elemento.ElementoId == 7 && main.carta[attr.Atributo] == 'E'" class="glyphicon glyphicon-tint" aria-hidden="true">6</span> 
+                        <span ng-if="main.carta.Elemento.ElementoId == 5 && main.carta[attr.Atributo] == 'E'" class="glyphicon glyphicon-certificate" aria-hidden="true">6</span> 
+                        <span ng-if="main.carta.Elemento.ElementoId == 8 && main.carta[attr.Atributo] == 'E'" class="glyphicon glyphicon-cloud" aria-hidden="true">6</span> 
+                        <span ng-if="main.carta.Elemento.ElementoId == 3 && main.carta[attr.Atributo] == 'E'" class="glyphicon glyphicon-tower" aria-hidden="true">6</span> 
+                        <span ng-if="main.carta.Elemento.ElementoId == 2 && main.carta[attr.Atributo] == 'E'" class="glyphicon glyphicon-asterisk" aria-hidden="true">6</span>
+                        <span ng-if="main.carta[attr.Atributo] != 'E'" ng-class="main.carta[attr.Atributo] == 'S' ? 'cor-txt-especial' : ''">{{ main.carta[attr.Atributo] }}</span>
+                    </div>
+                
+                    <div class="rankBandeira rank-ico" data-toggle="dica" data-descr="Rank: {{ main.carta.Rank }}">
+                        <span class="glyphicon glyphicon-bookmark rank-{{ main.carta.Rank }}" aria-hidden="true"></span>
+                    </div> 
+                    <div class="circle-g rank-{{ main.carta.Rank }}">
+                        <div class="circle-img-g"></div>
+                        <div class="circle-img-m"></div>
+                        <div class="circle-setas"></div>
+                        <div class="circle-setas-v"></div>
+                    </div>
+                </div>  
+            
+            </div>
+        </div>
+    </footer>
+    
+    @Scripts.Render("~/bundles/plugins")
+    @Scripts.Render("~/bundles/geral")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

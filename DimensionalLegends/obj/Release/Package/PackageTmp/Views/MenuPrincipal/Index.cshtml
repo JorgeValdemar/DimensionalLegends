@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Menu Principal";
+    ViewBag.Controller = "MenuPrincipal";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2></h2>
+
+<ul id="menuPrincipal">
+    <li ng-repeat="x in listaMenu">
+        <a href="javascript:void(0);" data-toggle="dica" data-descr="{{ x.descr }}" data-evt="{{ x.evt }}">
+            {{ x.nome }}
+        </a>
+    </li>
+</ul>
+
+
+@section scripts {
+    
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Game/menuPrincipal.js")"></script>
+
+}

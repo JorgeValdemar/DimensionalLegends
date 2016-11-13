@@ -1,0 +1,64 @@
+﻿
+.deck-option 
+{
+    float: left;
+    margin: 4px 4px 8px 4px;
+    padding: 5px 5px 5px 5px;
+    width: 100px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+.deck-option label
+{
+    font-weight: bold!important;
+}
+
+#cadastroImagem 
+{
+    float: left;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 10px 10px 10px 0px;
+    border-radius: 10px 10px 10px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#colunaCadImgs 
+{
+    float: left;
+    height: 110px;
+    width: 100%;
+    overflow: auto;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 0px 10px 0px 10px;
+    border-radius: 0px 10px 0px 10px;
+    margin: 0px 0px 10px 0px;
+}
+
+ul#cadastroImagensLista
+{
+    float: left;
+    padding: 0px;
+    height: 80px;
+}
+
+ul#cadastroImagensLista li
+{
+    float: left;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ccc;
+    margin: 0px 4px 0px 0px;
+    cursor: pointer;
+    -webkit-border-radius: 0px 10px 0px 10px;
+    border-radius: 0px 10px 0px 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}

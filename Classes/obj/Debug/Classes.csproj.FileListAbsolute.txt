@@ -1,0 +1,62 @@
+C:\Users\Jorge Valdemar\Documents\Visual Studio 2010\Projects\card\Classes\bin\Debug\Classes.dll
+C:\Users\Jorge Valdemar\Documents\Visual Studio 2010\Projects\card\Classes\bin\Debug\Classes.pdb
+C:\Users\Jorge Valdemar\Documents\Visual Studio 2010\Projects\card\Classes\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jorge Valdemar\Documents\Visual Studio 2010\Projects\card\Classes\obj\Debug\Classes.dll
+C:\Users\Jorge Valdemar\Documents\Visual Studio 2010\Projects\card\Classes\obj\Debug\Classes.pdb
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\card\Classes\bin\Debug\Classes.dll
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\card\Classes\bin\Debug\Classes.pdb
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\card\Classes\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\card\Classes\obj\Debug\Classes.dll
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\card\Classes\obj\Debug\Classes.pdb
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\card\Classes\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\card\Classes\bin\Debug\QuickGraph.Data.dll
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\card\Classes\bin\Debug\QuickGraph.dll
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\card\Classes\bin\Debug\QuickGraph.Graphviz.dll
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\card\Classes\bin\Debug\QuickGraph.Serialization.dll
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\card\Classes\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\card\Classes\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\card\Classes\bin\Debug\QuickGraph.xml
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\card\Classes\bin\Debug\QuickGraph.Data.xml
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\card\Classes\bin\Debug\QuickGraph.Graphviz.xml
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\card\Classes\bin\Debug\QuickGraph.Serialization.xml
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\DimensionalLegends\Classes\bin\Debug\Classes.dll
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\DimensionalLegends\Classes\bin\Debug\Classes.pdb
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\DimensionalLegends\Classes\bin\Debug\QuickGraph.Data.dll
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\DimensionalLegends\Classes\bin\Debug\QuickGraph.dll
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\DimensionalLegends\Classes\bin\Debug\QuickGraph.Graphviz.dll
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\DimensionalLegends\Classes\bin\Debug\QuickGraph.Serialization.dll
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\DimensionalLegends\Classes\bin\Debug\QuickGraph.xml
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\DimensionalLegends\Classes\bin\Debug\QuickGraph.Data.xml
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\DimensionalLegends\Classes\bin\Debug\QuickGraph.Graphviz.xml
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\DimensionalLegends\Classes\bin\Debug\QuickGraph.Serialization.xml
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\DimensionalLegends\Classes\obj\Debug\Classes.dll
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\DimensionalLegends\Classes\obj\Debug\Classes.pdb
+C:\Users\Jorge\Documents\Visual Studio 2010\Projects\DimensionalLegends\Classes\obj\Debug\Classes.csprojResolveAssemblyReference.cache
+C:\Users\jorge\Documents\Visual Studio 2013\Projects\DimensionalLegends\trunk\Classes\bin\Debug\Classes.dll
+C:\Users\jorge\Documents\Visual Studio 2013\Projects\DimensionalLegends\trunk\Classes\bin\Debug\Classes.pdb
+C:\Users\jorge\Documents\Visual Studio 2013\Projects\DimensionalLegends\trunk\Classes\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jorge\Documents\Visual Studio 2013\Projects\DimensionalLegends\trunk\Classes\bin\Debug\QuickGraph.Data.dll
+C:\Users\jorge\Documents\Visual Studio 2013\Projects\DimensionalLegends\trunk\Classes\bin\Debug\QuickGraph.dll
+C:\Users\jorge\Documents\Visual Studio 2013\Projects\DimensionalLegends\trunk\Classes\bin\Debug\QuickGraph.Graphviz.dll
+C:\Users\jorge\Documents\Visual Studio 2013\Projects\DimensionalLegends\trunk\Classes\bin\Debug\QuickGraph.Serialization.dll
+C:\Users\jorge\Documents\Visual Studio 2013\Projects\DimensionalLegends\trunk\Classes\bin\Debug\QuickGraph.xml
+C:\Users\jorge\Documents\Visual Studio 2013\Projects\DimensionalLegends\trunk\Classes\bin\Debug\QuickGraph.Data.xml
+C:\Users\jorge\Documents\Visual Studio 2013\Projects\DimensionalLegends\trunk\Classes\bin\Debug\QuickGraph.Graphviz.xml
+C:\Users\jorge\Documents\Visual Studio 2013\Projects\DimensionalLegends\trunk\Classes\bin\Debug\QuickGraph.Serialization.xml
+C:\Users\jorge\Documents\Visual Studio 2013\Projects\DimensionalLegends\trunk\Classes\obj\Debug\Classes.csprojResolveAssemblyReference.cache
+C:\Users\jorge\Documents\Visual Studio 2013\Projects\DimensionalLegends\trunk\Classes\obj\Debug\Classes.dll
+C:\Users\jorge\Documents\Visual Studio 2013\Projects\DimensionalLegends\trunk\Classes\obj\Debug\Classes.pdb
+C:\Users\teste\Documents\Visual Studio 2013\Projects\DimensionalLegendsAtual\trunk\Classes\bin\Debug\Classes.dll
+C:\Users\teste\Documents\Visual Studio 2013\Projects\DimensionalLegendsAtual\trunk\Classes\bin\Debug\Classes.pdb
+C:\Users\teste\Documents\Visual Studio 2013\Projects\DimensionalLegendsAtual\trunk\Classes\bin\Debug\Newtonsoft.Json.dll
+C:\Users\teste\Documents\Visual Studio 2013\Projects\DimensionalLegendsAtual\trunk\Classes\bin\Debug\QuickGraph.Data.dll
+C:\Users\teste\Documents\Visual Studio 2013\Projects\DimensionalLegendsAtual\trunk\Classes\bin\Debug\QuickGraph.dll
+C:\Users\teste\Documents\Visual Studio 2013\Projects\DimensionalLegendsAtual\trunk\Classes\bin\Debug\QuickGraph.Graphviz.dll
+C:\Users\teste\Documents\Visual Studio 2013\Projects\DimensionalLegendsAtual\trunk\Classes\bin\Debug\QuickGraph.Serialization.dll
+C:\Users\teste\Documents\Visual Studio 2013\Projects\DimensionalLegendsAtual\trunk\Classes\bin\Debug\QuickGraph.xml
+C:\Users\teste\Documents\Visual Studio 2013\Projects\DimensionalLegendsAtual\trunk\Classes\bin\Debug\QuickGraph.Data.xml
+C:\Users\teste\Documents\Visual Studio 2013\Projects\DimensionalLegendsAtual\trunk\Classes\bin\Debug\QuickGraph.Graphviz.xml
+C:\Users\teste\Documents\Visual Studio 2013\Projects\DimensionalLegendsAtual\trunk\Classes\bin\Debug\QuickGraph.Serialization.xml
+C:\Users\teste\Documents\Visual Studio 2013\Projects\DimensionalLegendsAtual\trunk\Classes\obj\Debug\Classes.csprojResolveAssemblyReference.cache
+C:\Users\teste\Documents\Visual Studio 2013\Projects\DimensionalLegendsAtual\trunk\Classes\obj\Debug\Classes.dll
+C:\Users\teste\Documents\Visual Studio 2013\Projects\DimensionalLegendsAtual\trunk\Classes\obj\Debug\Classes.pdb

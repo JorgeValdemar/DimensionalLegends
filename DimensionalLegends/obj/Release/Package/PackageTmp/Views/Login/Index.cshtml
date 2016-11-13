@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Login - Dimensional Legends";
+    ViewBag.Controller = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+
+<div class="wrapper">
+    
+    <div class="login">
+        <h2>Dimensional Legends</h2>
+
+        <form role="form" id="formLogin" data-parsley-validate>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="E-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" class="form-control" id="senha" placeholder="Senha" required>
+            </div>
+            <button type="button" class="btn btn-primary">Logar</button>
+        </form>
+        
+    </div>
+
+</div>
