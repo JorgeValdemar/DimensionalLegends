@@ -57,6 +57,5 @@ C:\Users\teste\Documents\Visual Studio 2013\Projects\DimensionalLegendsAtual\tru
 C:\Users\teste\Documents\Visual Studio 2013\Projects\DimensionalLegendsAtual\trunk\Classes\bin\Debug\QuickGraph.Data.xml
 C:\Users\teste\Documents\Visual Studio 2013\Projects\DimensionalLegendsAtual\trunk\Classes\bin\Debug\QuickGraph.Graphviz.xml
 C:\Users\teste\Documents\Visual Studio 2013\Projects\DimensionalLegendsAtual\trunk\Classes\bin\Debug\QuickGraph.Serialization.xml
-C:\Users\teste\Documents\Visual Studio 2013\Projects\DimensionalLegendsAtual\trunk\Classes\obj\Debug\Classes.csprojResolveAssemblyReference.cache
 C:\Users\teste\Documents\Visual Studio 2013\Projects\DimensionalLegendsAtual\trunk\Classes\obj\Debug\Classes.dll
 C:\Users\teste\Documents\Visual Studio 2013\Projects\DimensionalLegendsAtual\trunk\Classes\obj\Debug\Classes.pdb

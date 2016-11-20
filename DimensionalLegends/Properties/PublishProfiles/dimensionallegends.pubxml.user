@@ -64,6 +64,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Aplicacao/Opcoes/Atualizar.ashx">
       <publishTime>12/31/2015 19:49:22</publishTime>
     </File>
+    <File Include="Aplicacao/Outros/HandlerContato.ashx">
+      <publishTime>11/13/2016 14:13:17</publishTime>
+    </File>
     <File Include="Aplicacao/Utils/Elementos.ashx">
       <publishTime>12/31/2015 19:49:22</publishTime>
     </File>
@@ -83,13 +86,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/31/2015 19:50:09</publishTime>
     </File>
     <File Include="bin/Classes.dll">
-      <publishTime>08/07/2016 23:32:03</publishTime>
+      <publishTime>11/20/2016 12:57:54</publishTime>
     </File>
     <File Include="bin/Content/fonts/glyphicons-halflings-regular.eot">
       <publishTime>12/31/2015 19:49:24</publishTime>
     </File>
     <File Include="bin/DimensionalLegends.dll">
-      <publishTime>08/07/2016 23:32:04</publishTime>
+      <publishTime>11/20/2016 12:57:56</publishTime>
     </File>
     <File Include="bin/EngineIoClientDotNet.dll">
       <publishTime>12/31/2015 19:50:03</publishTime>
@@ -902,7 +905,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/03/2016 19:43:15</publishTime>
     </File>
     <File Include="Scripts/Game/arena.js">
-      <publishTime>01/03/2016 18:45:25</publishTime>
+      <publishTime>11/20/2016 12:53:59</publishTime>
     </File>
     <File Include="Scripts/Game/cadastro.js">
       <publishTime>12/31/2015 19:49:25</publishTime>
