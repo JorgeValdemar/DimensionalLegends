@@ -273,6 +273,8 @@
         
         $scope.atualizarHistoricoPassos($scope.ListaHistoricoPassosP1, '1', function () {
             var $tabuleiro = $('#tabuleiro');
+
+            console.log($scope.arenaSituacao);
             // apresenta a carta adversária
             for (var i in $scope.arenaSituacao) {
                 for (var j in $scope.arenaSituacao[i]) {
@@ -285,14 +287,15 @@
                             c.css('opacity', '1');
                         });
 
-                        // se eu sempre sou o p1, então será obvio receber sempre o p2 como novo
+                        // se eu sempre sou o p1, então será obvio receber do servidor p2 como novo
                         $bloco.find('.carta').addClass('p2');
 
-                        //if ($scope.arenaSituacao[i][j].Player == 1) {
-                        //    $bloco.find('.carta').addClass('p1');
-                        //} else {
-                        //    $bloco.find('.carta').addClass('p2');
-                        //}
+                        /*
+                        if ($scope.arenaSituacao[i][j].Player == 1) {
+                            $bloco.find('.carta').addClass('p1');
+                        } else {
+                            $bloco.find('.carta').addClass('p2');
+                        }*/
                     }
                 }
             }
@@ -404,9 +407,16 @@
         entrarArena(function (resp) {
             $scope.musica = resp.Musica;
             $scope.arenaConfig = resp.ArenaConfig;
+            $scope.arenaSituacao = resp.ArenaSituacao;
             $scope.arena = [resp.arenasituacaoY1, resp.arenasituacaoY2, resp.arenasituacaoY3, resp.arenasituacaoY4];
 
             $scope.pontuacaoAtualizar();
+            console.log($scope.arenaConfig.InicioTurno);
+
+            if ($scope.arenaConfig.InicioTurno == 2) {
+                console.log('segundo player começou');
+                $scope.atualizarTabuleiro();
+            }
         });
 
 

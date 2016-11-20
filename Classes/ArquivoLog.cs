@@ -11,8 +11,8 @@ namespace Classes
     public class ArquivoLog
     {
         private Classes.Objetos.ArenaObjItens ArenaObjItens = new Classes.Objetos.ArenaObjItens();
-        public string Path = @"E:\domains\dimensionallegends.com\wwwroot\Log\ArenaState\";
-        //public string Path = @"C:\Users\teste\Documents\Visual Studio 2013\Projects\DimensionalLegendsAtual\trunk\DimensionalLegends\Log\ArenaState\";
+        //public string Path = @"E:\domains\dimensionallegends.com\wwwroot\Log\ArenaState\";
+        public string Path = @"C:\Users\teste\Documents\Visual Studio 2013\Projects\DimensionalLegendsAtual\trunk\DimensionalLegends\Log\ArenaState\";
         public string Name = "";
 
         public string Select(string nomeArquivo = "")

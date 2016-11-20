@@ -191,6 +191,12 @@ namespace card.Aplicacao.Arena
         {
             Decisao IDecisao = new Decisao(IArenaObjItens);
 
+            if (IArenaObjItens.p1deckListCard.Count() == 0 && IArenaObjItens.p2deckListCard.Count() == 0)
+            {
+                IArenaObjItens.arenaConfig.Encerrada = true;
+                return;
+            }
+
             if (IArenaObjItens.arenaConfig.Turno == 1)
             {
                 // SE O TURNO FOR DO PLAYER 1
@@ -203,6 +209,12 @@ namespace card.Aplicacao.Arena
                 }
                 else
                 {
+                    if (IArenaObjItens.p1deckListCard.Count() == 0 && IArenaObjItens.p2deckListCard.Count() == 0)
+                    {
+                        IArenaObjItens.arenaConfig.Encerrada = true;
+                        return;
+                    }
+
                     if (!this.IsFirstTurn())
                     {
 

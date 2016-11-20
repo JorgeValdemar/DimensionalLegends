@@ -11,6 +11,7 @@ namespace Classes.Objetos
         private int _p1_pontos;
         private int _p2_pontos;
         private int _turno;
+        private int _inicioTurno = 1;
         private int _cardIndexEscolhido = -1;
         private int _posXEscolhido = -1;
         private int _posYEscolhido = -1;
@@ -45,6 +46,13 @@ namespace Classes.Objetos
             get { return _turno; }
             set { _turno = value; }
         }
+
+        public int InicioTurno
+        {
+            get { return _inicioTurno; }
+            set { _inicioTurno = value; }
+        }
+        
 
         public int CardIndexEscolhido
         {

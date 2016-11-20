@@ -296,15 +296,38 @@ namespace card.Aplicacao.Arena
                 // TURNO É ESCOLHIDO
                 config.Turno = this.TurnoVez();
 
+                if (config.Turno == 2)
+                {
+                    Classes.Objetos.ArenaObjItens IArenaObjItens = new Classes.Objetos.ArenaObjItens();
+                    IArenaObjItens.arenaConfig = config;
+                    IArenaObjItens.arenasituacaoY1 = Classes.Objetos.ArenaObjItens.RetornarColuna(0, arenaTabuleiro);
+                    IArenaObjItens.arenasituacaoY2 = Classes.Objetos.ArenaObjItens.RetornarColuna(1, arenaTabuleiro);
+                    IArenaObjItens.arenasituacaoY3 = Classes.Objetos.ArenaObjItens.RetornarColuna(2, arenaTabuleiro);
+                    IArenaObjItens.arenasituacaoY4 = Classes.Objetos.ArenaObjItens.RetornarColuna(3, arenaTabuleiro);
+                    IArenaObjItens.p1deckListCard = IListaCard;
+                    IArenaObjItens.p2deckListCard = ICartasArcadeEscolhidas;
+
+                    // FORCAR JOGADA DE ARCADE
+                    Decisao IDecisao = new Decisao(IArenaObjItens);
+                    IArenaObjItens = IDecisao.Arcade();
+
+                    if (IDecisao.Erro)
+                    {
+                        feed.Erro = true;
+                        feed.ErroDescricao = IDecisao.ErroDescricao;
+                    }
+                    config.Turno = 1;
+                    config.InicioTurno = 2;
+                }
 
                 Classes.ArquivoLog IArquivoLog = new ArquivoLog
                     (
                         IListaCard, 
                         ICartasArcadeEscolhidas,
-                        linhaTabuleiro,
-                        linhaTabuleiro,
-                        linhaTabuleiro,
-                        linhaTabuleiro,
+                        Classes.Objetos.ArenaObjItens.RetornarColuna(0, arenaTabuleiro),
+                        Classes.Objetos.ArenaObjItens.RetornarColuna(1, arenaTabuleiro),
+                        Classes.Objetos.ArenaObjItens.RetornarColuna(2, arenaTabuleiro),
+                        Classes.Objetos.ArenaObjItens.RetornarColuna(3, arenaTabuleiro),
                         config
                     );
 
@@ -315,10 +338,11 @@ namespace card.Aplicacao.Arena
                 // portanto só é necessário as do player 2, na verdade é provisória para teste esta necessidade
                 feed.ListaCardsOponente = ICartasArcadeEscolhidas;
                 feed.ArenaConfig = config;
-                feed.arenasituacaoY1 = linhaTabuleiro;
-                feed.arenasituacaoY2 = linhaTabuleiro;
-                feed.arenasituacaoY3 = linhaTabuleiro;
-                feed.arenasituacaoY4 = linhaTabuleiro;
+                feed.arenasituacaoY1 = Classes.Objetos.ArenaObjItens.RetornarColuna(0, arenaTabuleiro);
+                feed.arenasituacaoY2 = Classes.Objetos.ArenaObjItens.RetornarColuna(1, arenaTabuleiro);
+                feed.arenasituacaoY3 = Classes.Objetos.ArenaObjItens.RetornarColuna(2, arenaTabuleiro);
+                feed.arenasituacaoY4 = Classes.Objetos.ArenaObjItens.RetornarColuna(3, arenaTabuleiro);
+                feed.ArenaSituacao = arenaTabuleiro;
                 feed.Musica = IMusica;
                 feed.Erro = false;
 
@@ -382,7 +406,7 @@ namespace card.Aplicacao.Arena
         private int TurnoVez()
         {
             Random numRand = new Random();
-            int rand = 1;//numRand.Next(1, 3);
+            int rand = numRand.Next(1, 3);
 
             return rand;
         }
